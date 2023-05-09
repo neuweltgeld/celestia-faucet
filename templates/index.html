@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Celestia Test Token Faucet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+	<img src="{{ url_for('static', filename='logo.png') }}" alt="Celestia Logo">
+      <h1>Celestia Test Token Faucet</h1>
+      <div class="warning">
+        Please use celestiaXXXX address
+      </div>
+      <form action="" method="post" novalidate>
+        {{ form.csrf_token }}
+        Wallet Address: {{ form.address(size=40) }}<br>
+        {% for error in form.address.errors %}
+          <span style="color: red;">[{{ error }}]</span><br>
+        {% endfor %}
+        {{ form.submit(class="submit-button") }}
+      </form>
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+
+            {% for category, message in messages %}
+            {% if category == 'success' %}
+			<div class="warning3" style="background-color:#2df92b"> {{ message }} </div>
+			<div class="centered">
+			<a href="https://testnet.mintscan.io/celestia-incentivized-testnet/txs/{{ message.split(': ')[-1] }}"class="submit-button" target="_blank">View Transaction</a>
+			</div>
+            {% else %}
+			<div class="warning3" style="background-color:#f92b80;"> {{ message }} </div>
+            {% endif %}
+			{% endfor %}
+        {% endif %}
+      {% endwith %}
+      {% if remaining_time %}
+
+      {% endif %}
+	  
+	  <h2>This faucet provides you with 0.1 TIA tokens on the Celestia Blockspacerace testnet.
+	  <p style="text-decoration:underline">It has no monetary value.</p></h2>
+    </div>
+  </div>
+</body>
+</html>
