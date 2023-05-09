@@ -1,0 +1,129 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container img {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+  }
+  
+h1 {
+	color:#7b2bf9;
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 0.75rem; 
+    font-weight: 100;
+    margin: 2rem;
+}
+
+.box {
+    width: 600px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	border-radius: 5px;
+}
+
+input[type="text"] {
+    flex: 2;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #7b2bf9;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px; /* Reduce font size */
+    padding: 0.375rem 0.75rem; /* Reduce padding */
+}
+
+.submit-button {
+    background-color: #7b2bf9;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 0.375rem 0.75rem;
+}
+
+.warning {
+    background-color: #7b2bf9;
+    color: #ffffff;
+	font-size:12px;
+	padding: 10px;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:10px;
+    margin-bottom: 20px;
+	overflow: auto;
+  word-wrap: break-word;
+}
+
+
+.warning3 {
+    color: #ffffff;
+	font-size:12px;
+	margin-top:10px;
+    padding: 10px;
+    border-radius: 4px;
+    width: 50%;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 10px;
+	overflow: auto;
+  word-wrap: break-word;
+}
+
+.centered {
+    text-align: center;
+    list-style-type: none;
+	padding-left: 0;
+}
