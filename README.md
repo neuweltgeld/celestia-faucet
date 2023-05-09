@@ -15,3 +15,11 @@ celestia-faucet/
 └── faucet.py
 ```
 
+The balance in the wallet named ```wallet``` is used. 
+
+## Planned features
+. Keplr wallet integration
+
+. Wallet balance check
+
+. Wallet address autofill
